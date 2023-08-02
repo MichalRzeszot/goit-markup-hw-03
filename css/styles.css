@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 *,
 *:before,
 *:after {
@@ -39,10 +43,20 @@ body {
   width: 1440px;
   height: 600px;
   flex-shrink: 0;
+  text-align: center;
 }
 .main-navy-content {
   width: 496px;
   text-align: center;
+  margin: 0 auto;
+  padding-top: 188px;
+}
+.button-layout {
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 48px;
 }
 .company-deccription-layout {
   width: 1128px;
@@ -98,14 +112,8 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  margin: 96px 427px 72px 427px;
-}
-.portfolio-img-1,
-.portfolio-img-2,
-.portfolio-img-3 {
-  width: 1440px;
-  height: 420px;
-  flex-shrink: 0;
+  justify-content: center;
+  margin: 96px 0px 72px 0px;
 }
 .logo {
   font-size: 18px;
@@ -133,6 +141,13 @@ body {
 }
 .no-dots {
   list-style: none;
+}
+.image-columns {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  justify-content: center;
 }
 .mail {
   font-size: 16px;
@@ -173,7 +188,6 @@ body {
   line-height: 1.5;
   color: var(--h1-and-ourteam-images-bacground-color);
   font-weight: 500;
-  padding: 16px 32px;
   background-color: var(--orderservice-and-logospan-color);
   cursor: pointer;
   font-family: "Roboto";
@@ -196,6 +210,16 @@ body {
 .portfolio-button:focus {
   color: var(--h1-and-ourteam-images-bacground-color);
   background-color: var(--portfolio-button);
+}
+.portfoilio-text-layout {
+  display: flex;
+  padding: 0px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  padding-top: 32px;
 }
 .company-description-heading {
   font-size: 20px;
@@ -238,6 +262,7 @@ body {
 .img-paragraph {
   font-size: 16px;
   line-height: 1.5;
+  padding-bottom: 32px;
 }
 .footer-background {
   background-color: var(--navyblue-background-and-heading-color);
