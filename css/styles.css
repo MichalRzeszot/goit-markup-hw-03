@@ -1,3 +1,8 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--navyblue-background-and-heading-color);
@@ -9,6 +14,98 @@ body {
   --paragraph-color: #434455;
   --h1-and-ourteam-images-bacground-color: #ffffff;
   --portfolio-button: #404bbf;
+  --cornflower: #e7e9fc;
+}
+.container {
+  width: 1440px;
+  height: 2592px;
+}
+.header-layout {
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--cornflower);
+}
+.nav-layout {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-right: 332px;
+  margin-left: 76px;
+}
+.main-navy-section-layout {
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
+}
+.main-navy-content {
+  width: 496px;
+  text-align: center;
+}
+.company-deccription-layout {
+  width: 1128px;
+  height: 104px;
+  flex-shrink: 0;
+  margin: 120px 156px;
+}
+.comp-description-feature {
+  display: inline-block;
+  width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0;
+}
+.wywd-layout {
+  height: 412px;
+  flex-shrink: 0;
+  margin: 120px 156px;
+}
+.wawd-image-layout {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.team-section-layout {
+  width: 1440px;
+  height: 732px;
+  flex-shrink: 0;
+}
+.team-img-layout {
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+  background-color: white;
+}
+.footer-layout {
+  width: 1440px;
+  height: 312px;
+  flex-shrink: 0;
+  padding: 100px 1020px 100px 156px;
+}
+.footer-content-layout {
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+}
+.portfolio-buttons-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 96px 427px 72px 427px;
+}
+.portfolio-img-1,
+.portfolio-img-2,
+.portfolio-img-3 {
+  width: 1440px;
+  height: 420px;
+  flex-shrink: 0;
 }
 .logo {
   font-size: 18px;
@@ -37,16 +134,28 @@ body {
 .no-dots {
   list-style: none;
 }
-.contact {
+.mail {
   font-size: 16px;
   line-height: 1.5%;
   color: var(--navyblue-background-and-heading-color);
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.32px;
+  margin-right: 40px;
 }
-.contact:hover,
-.contact:focus {
+.tel {
+  font-size: 16px;
+  line-height: 1.5%;
+  color: var(--navyblue-background-and-heading-color);
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 0.32px;
+  padding-right: 156px;
+}
+.mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus {
   color: var(--portfolio-button);
 }
 .main-navy-section {
@@ -93,27 +202,33 @@ body {
   line-height: 1.2;
   font-weight: 500;
   letter-spacing: 0.4px;
+  margin-bottom: 0;
 }
 .company-description-paragraph {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: var(--paragraph-color);
+  margin-top: 8px;
 }
-.team-section {
+.team {
   background-color: var(--cloud-background-color);
+  padding: 120px 156px;
 }
 .wawd-heading {
   font-size: 36px;
   line-height: 1.11;
   font-weight: 700;
   letter-spacing: 0.72px;
+  margin: 0px 402px 112px 403px;
 }
 .team-heading {
   font-size: 36px;
   line-height: 1.11;
   font-weight: 700;
   letter-spacing: 0.72px;
+  text-align: center;
+  padding-bottom: 72px;
 }
 .img-heading {
   font-size: 20px;
@@ -140,4 +255,5 @@ body {
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: var(--h1-and-ourteam-images-bacground-color);
+  margin-top: 17.5px;
 }
