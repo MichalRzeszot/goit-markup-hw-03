@@ -32,7 +32,6 @@ a {
 }
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--navyblue-background-and-heading-color);
 }
 :root {
   --cloud-background-color: #f4f4fd;
